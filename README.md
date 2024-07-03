@@ -1,9 +1,9 @@
 # WwxTileVisu
 
-[![Version](https://img.shields.io/badge/Symcon-TileVisu--Skin-red.svg)](https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-skins/)
-[![Product](https://img.shields.io/badge/Symcon%20Version-7.1-blue.svg)](https://www.symcon.de/produkt/)
-[![Version](https://img.shields.io/badge/Skin%20Version-1.0.20240702-orange.svg)](https://github.com/Wilkware/WwxTileVisu)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-green.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Version](https://img.shields.io/badge/Symcon-TileVisu--Skin-red.svg?style=flat-square)](https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-skins/)
+[![Product](https://img.shields.io/badge/Symcon%20Version-7.x-blue.svg?style=flat-square)](https://www.symcon.de/produkt/)
+[![Version](https://img.shields.io/badge/Skin%20Version-1.0.20240702-orange.svg?style=flat-square)](https://github.com/Wilkware/WwxTileVisu)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-green.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Extension um das gleiche HTML im WebFront und Tile Visualisation zusammen mit dem WwxSkin zu nutzen.
 
