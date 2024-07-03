@@ -1,0 +1,133 @@
+/**
+ * wwx.css
+ *
+ * Injection stylesheet for the new TileVisu (version 7.x).
+ * Background: Use the same HTML & CSS (~HTMLBox) in WebFront and TileVisu!
+ * https://github.com/wilkware/WwxTileVisu
+ *
+ * @package       WwxTileView - (W)ilk(w)are E(x)tension for Tile Visu
+ * @author        Heiko Wilknitz <heiko@wilkware.de>
+ * @copyright     2024 Heiko Wilknitz
+ * @link          https://wilkware.de
+ * @license       https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0
+ * 
+ */
+
+body {
+    margin: 0px;
+}
+
+/* app-like scrollbar only for google chrome (pc) */
+@supports (-webkit-appearance:none) and (not (overflow:-webkit-marquee))
+    and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none)) {
+    ::-webkit-scrollbar {
+        height: 4px;
+        width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background: transparent;
+        border: solid 3px transparent;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        color: gray;
+        background: gray;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /* Corner */
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}
+
+/* Table styles */
+table.wwx {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+.wwx th,
+.wwx td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 4px;
+}
+
+.wwx tr {
+    border-bottom: 1px solid color-mix(in srgb, currentcolor 25%, transparent);
+}
+
+.wwx thead {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.wwx thead tr {
+    border-bottom: 0px;
+}
+
+.wwx thead th:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.wwx thead th:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.wwx thead.olive {
+    background-color: rgb(160, 160, 0);
+}
+
+.wwx thead.blue {
+    background-color: rgb(17, 160, 243);
+}
+
+.wwx thead.orange {
+    background-color: rgb(255, 152, 0);
+}
+
+.wwx thead.light {
+    background-color: rgb(0, 205, 171);
+}
+
+.wwx thead.dark {
+    background-color: rgb(36, 98, 91);
+}
+
+.wwx thead.lines {
+    border-top: 2px solid color-mix(in srgb, currentcolor 25%, transparent);
+    border-bottom: 2px solid color-mix(in srgb, currentcolor 25%, transparent);
+}
+
+.tc1  tr>:nth-child(1),
+.tc2  tr>:nth-child(2),
+.tc3  tr>:nth-child(3),
+.tc4  tr>:nth-child(4),
+.tc5  tr>:nth-child(5),
+.tc6  tr>:nth-child(6),
+.tc7  tr>:nth-child(7),
+.tc8  tr>:nth-child(8),
+.tc9  tr>:nth-child(9),
+.tc10 tr>:nth-child(10) {
+    text-align: center;
+}
+
+.tr1  tr>:nth-child(1),
+.tr2  tr>:nth-child(2),
+.tr3  tr>:nth-child(3),
+.tr4  tr>:nth-child(4),
+.tr5  tr>:nth-child(5),
+.tr6  tr>:nth-child(6),
+.tr7  tr>:nth-child(7),
+.tr8  tr>:nth-child(8),
+.tr9  tr>:nth-child(9),
+.tr10 tr>:nth-child(10) {
+    text-align: right;
+}
