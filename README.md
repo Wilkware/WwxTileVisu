@@ -33,7 +33,7 @@ Dieses Stylesheet unterstützt die gleichen CSS-Klassen wie der WwxSkin, sodass 
     ... oder wer meine Skript-Bibliothek nutzt [Pitti’s Skript-Bibliothek](https://community.symcon.de/t/pittis-skript-bibliothek/131876)  
     `$html = __TILE_VISU_SCRIPT; // als erste Zeitle der HTML Definition schreiben`  
 
-Eine ausführliche Beschreibung der Technik und Zusammenhänge kann auf meinem [Blog](wilkware.de) auf der Seite [WwxTileSkin](https://wilkware.de/ip-symcon-skins/wwx-tilevisu/) nachgelesen werden.
+Eine ausführliche Beschreibung der Technik und Zusammenhänge kann auf meinem [Blog](wilkware.de) auf der Seite [WwxTileSkin](https://wilkware.de/ip-symcon-skins/wwx-tile-visu/) nachgelesen werden.
 
 ### 4. Versionshistorie
 
