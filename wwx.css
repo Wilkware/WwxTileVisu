@@ -33,11 +33,10 @@ body {
     /* Handle */
     ::-webkit-scrollbar-thumb {
         border-radius: 5px;
-        color: gray;
         background: gray;
     }
     ::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background: gray;
     }
 
     /* Corner */
@@ -67,12 +66,15 @@ table.wwx {
 .wwx thead {
     font-weight: bold;
     color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
 }
 
 .wwx thead tr {
-    border-bottom: 0px;
+    border-bottom: 0px; 
 }
 
+/*
 .wwx thead th:first-child {
     border-radius: 5px 0 0 5px;
 }
@@ -80,6 +82,7 @@ table.wwx {
 .wwx thead th:last-child {
     border-radius: 0 5px 5px 0;
 }
+*/
 
 .wwx thead.olive {
     background-color: rgb(160, 160, 0);
@@ -101,9 +104,29 @@ table.wwx {
     background-color: rgb(36, 98, 91);
 }
 
+.wwx thead.theme {
+    background-color: var(--accent-color);
+}
+
 .wwx thead.lines {
-    border-top: 2px solid color-mix(in srgb, currentcolor 25%, transparent);
-    border-bottom: 2px solid color-mix(in srgb, currentcolor 25%, transparent);
+    background-color: var(--card-color);
+}
+.wwx thead.lines th:after,
+.wwx thead.lines th:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.wwx thead.lines th:before {
+    top: -1px;
+    border-top:
+    3px solid color-mix(in srgb, currentcolor 25%, transparent);
+}
+.wwx thead.lines th:after {
+    bottom: -1px;
+    border-bottom:
+    2px solid color-mix(in srgb, currentcolor 25%, transparent);
 }
 
 .tc1  tr>:nth-child(1),

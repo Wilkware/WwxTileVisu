@@ -1,8 +1,8 @@
 # WwxTileVisu
 
 [![Version](https://img.shields.io/badge/Symcon-TileVisu--Skin-red.svg?style=flat-square)](https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-skins/)
-[![Product](https://img.shields.io/badge/Symcon%20Version-7.x-blue.svg?style=flat-square)](https://www.symcon.de/produkt/)
-[![Version](https://img.shields.io/badge/Skin%20Version-1.0.20240702-orange.svg?style=flat-square)](https://github.com/Wilkware/WwxTileVisu)
+[![Product](https://img.shields.io/badge/Symcon%20Version-7.2-blue.svg?style=flat-square)](https://www.symcon.de/produkt/)
+[![Version](https://img.shields.io/badge/Skin%20Version-1.1.20241221-orange.svg?style=flat-square)](https://github.com/Wilkware/WwxTileVisu)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-green.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Extension um das gleiche HTML im WebFront und Tile Visualisation zusammen mit dem WwxSkin zu nutzen.
@@ -27,11 +27,22 @@ Dieses Stylesheet unterstützt die gleichen CSS-Klassen wie der WwxSkin, sodass 
 ### 3. Installation
 
 1. Repository `https://github.com/Wilkware/WwxTileVisu` auschecken.
-2. Dateien `wwx.css` und `wwx.js` in das Preview-Verzeichnis von IPS legen (/usr/share/smcon/preview).
-3. Folgende Zeile vor dem bestehenden HTML-Code einfügen: `<script type="application/javascript" src="./preview/wwx.js"></script>`.
+2. Dateien `wwx.css` und `wwx.js` in das Preview-Verzeichnis von IPS legen (/usr/share/symcon/preview/).
+3. Folgende Zeile vor dem bestehenden HTML-Code einfügen ...  
+    `<script type="application/javascript" src="./preview/wwx.js"></script>`  
+    ... oder wer meine Skript-Bibliothek nutzt [Pitti’s Skript-Bibliothek](https://community.symcon.de/t/pittis-skript-bibliothek/131876)  
+    `$html = __TILE_VISU_SCRIPT; // als erste Zeitle der HTML Definition schreiben`  
 
+Eine ausführliche Beschreibung der Technik und Zusammenhänge kann auf meinem [Blog](wilkware.de) auf der Seite [WwxTileSkin](https://wilkware.de/ip-symcon-skins/wwx-tilevisu/) nachgelesen werden.
 
 ### 4. Versionshistorie
+
+v1.1.20241221
+
+* _NEU_: Tabellenstyle 'theme' (head), Tabellenkopffarbe wie Theme-Farbe
+* _NEU_: Sticky (stehender) Tabellenkopf
+* _FIX_: Tabellenstyle 'lines' (head) funktioniert beim scrollen korrekt
+* _FIX_: Meta-Tag wird jetzt von IPS ausgeliefert bzw. bereitgestellt
 
 v1.0.20240702
 
