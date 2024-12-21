@@ -109,6 +109,7 @@ table.wwx {
 }
 
 .wwx thead.lines {
+    color: var(--content-color);
     background-color: var(--card-color);
 }
 .wwx thead.lines th:after,
