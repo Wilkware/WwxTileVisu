@@ -1,8 +1,8 @@
 # WwxTileVisu
 
 [![Version](https://img.shields.io/badge/Symcon-TileVisu--Skin-red.svg?style=flat-square)](https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-skins/)
-[![Product](https://img.shields.io/badge/Symcon%20Version-7.2-blue.svg?style=flat-square)](https://www.symcon.de/produkt/)
-[![Version](https://img.shields.io/badge/Skin%20Version-1.1.20241221-orange.svg?style=flat-square)](https://github.com/Wilkware/WwxTileVisu)
+[![Product](https://img.shields.io/badge/Symcon%20Version-8.1-blue.svg?style=flat-square)](https://www.symcon.de/produkt/)
+[![Version](https://img.shields.io/badge/Skin%20Version-1.2.20250721-orange.svg?style=flat-square)](https://github.com/Wilkware/WwxTileVisu)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-green.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Extension um das gleiche HTML im WebFront und Tile Visualisation zusammen mit dem WwxSkin zu nutzen.
@@ -22,20 +22,26 @@ Dieses Stylesheet unterstützt die gleichen CSS-Klassen wie der WwxSkin, sodass 
 
 ### 2. Voraussetzungen
 
-* IP-Symcon ab Version 7.1
+* IP-Symcon ab Version 8.1
 
 ### 3. Installation
 
 1. Repository `https://github.com/Wilkware/WwxTileVisu` auschecken.
 2. Dateien `wwx.css` und `wwx.js` in das Preview-Verzeichnis von IPS legen (/usr/share/symcon/preview/).
 3. Folgende Zeile vor dem bestehenden HTML-Code einfügen ...  
-    `<script type="application/javascript" src="./preview/wwx.js"></script>`  
+    `<script type="application/javascript" src="./tile/wwx.js"></script>`  
     ... oder wer meine Skript-Bibliothek nutzt [Pitti’s Skript-Bibliothek](https://community.symcon.de/t/pittis-skript-bibliothek/131876)  
     `$html = __TILE_VISU_SCRIPT; // als erste Zeitle der HTML Definition schreiben`  
 
 Eine ausführliche Beschreibung der Technik und Zusammenhänge kann auf meinem [Blog](wilkware.de) auf der Seite [WwxTileSkin](https://wilkware.de/ip-symcon-skins/wwx-tile-visu/) nachgelesen werden.
 
 ### 4. Versionshistorie
+
+v1.2.20250721
+
+* _FIX_: CSS wird jetzt über '/tile' geladen
+* _FIX_: Scrollbar Thumb standardmäßig auf transparent gesetzt.
+* _FIX_: Dokumentation angepasst
 
 v1.1.20241221
 

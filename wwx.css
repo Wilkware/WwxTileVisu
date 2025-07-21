@@ -1,13 +1,13 @@
 /**
  * wwx.css
  *
- * Injection stylesheet for the new TileVisu (version 7.x).
+ * Injection stylesheet for the new TileVisu (version 8.x).
  * Background: Use the same HTML & CSS (~HTMLBox) in WebFront and TileVisu!
  * https://github.com/wilkware/WwxTileVisu
  *
  * @package       WwxTileView - (W)ilk(w)are E(x)tension for Tile Visu
  * @author        Heiko Wilknitz <heiko@wilkware.de>
- * @copyright     2024 Heiko Wilknitz
+ * @copyright     2025 Heiko Wilknitz
  * @link          https://wilkware.de
  * @license       https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0
  * 
@@ -33,7 +33,7 @@ body {
     /* Handle */
     ::-webkit-scrollbar-thumb {
         border-radius: 5px;
-        background: gray;
+        background: transparent;
     }
     ::-webkit-scrollbar-thumb:hover {
         background: gray;
