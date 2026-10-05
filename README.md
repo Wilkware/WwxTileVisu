@@ -1,73 +1,27 @@
 # 🪄 WwxTileVisu - (W)ilk(w)are E(x)tended Tile Visu
 
-[![Version](https://img.shields.io/badge/Symcon-TileVisu--Skin-red.svg?style=flat-square)](https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-skins/)
+[![Symcon](https://img.shields.io/badge/Symcon-TileVisu--Skin-red.svg?style=flat-square)](https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-skins/)
 [![Product](https://img.shields.io/badge/Symcon%20Version-8.1-blue.svg?style=flat-square)](https://www.symcon.de/produkt/)
 [![Version](https://img.shields.io/badge/Skin%20Version-1.3.20250829-orange.svg?style=flat-square)](https://github.com/Wilkware/WwxTileVisu)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-green.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Extension um das gleiche HTML im WebFront und Tile Visualisation zusammen mit dem WwxSkin zu nutzen.
+Erweiterung, um das gleiche HTML im WebFront und in der Kachel-Visualisierung (TileVisu) zusammen mit dem WwxSkin zu nutzen.
 
-## 📃 Inhaltverzeichnis
+- [Deutsche Dokumentation](docs/de/README.md "Deutsche Dokumentation")
 
-1. [Funktionsumfang](#user-content-1-funktionsumfang)
-2. [Voraussetzungen](#user-content-2-voraussetzungen)
-3. [Installation](#user-content-3-installation)
-4. [Versionshistorie](#user-content-8-versionshistorie)
+Extension to use the same HTML in the WebFront and in the tile visualization (TileVisu) together with the WwxSkin.
 
-### 1. Funktionsumfang
-
-Da die Tile Visu derzeit noch keine Skins unterstützt, ist ein Umweg über ein JavaScript erforderlich.  
-Dieses JavaScript prüft, ob das HTML im WebFront angezeigt wird. Wenn nicht, wird ein Stylesheet in den Head injiziert.  
-Dieses Stylesheet unterstützt die gleichen CSS-Klassen wie der WwxSkin, sodass das gleiche HTML übergangsweise in beiden Visualisierungen genutzt werden kann.
-
-### 2. Voraussetzungen
-
-* Symcon ab Version 8.1
-
-### 3. Installation
-
-1. Repository `https://github.com/Wilkware/WwxTileVisu` auschecken.
-2. Dateien `wwx.css` und `wwx.js` in das Preview-Verzeichnis von IPS legen (/usr/share/symcon/preview/).
-3. Folgende Zeile vor dem bestehenden HTML-Code einfügen ...  
-    `<script type="application/javascript" src="./tile/wwx.js"></script>`  
-    ... oder wer meine Skript-Bibliothek nutzt [Pitti’s Skript-Bibliothek](https://community.symcon.de/t/pittis-skript-bibliothek/131876)  
-    `$html = __TILE_VISU_SCRIPT; // als erste Zeitle der HTML Definition schreiben`  
-
-Eine ausführliche Beschreibung der Technik und Zusammenhänge kann auf meinem [Blog](wilkware.de) auf der Seite [WwxTileSkin](https://wilkware.de/ip-symcon-skins/wwx-tile-visu/) nachgelesen werden.
-
-### 4. Versionshistorie
-
-v1.3.20250829
-
-* _FIX_: Kleine Anpassung bei Table Head von 'lines'
-* _FIX_: Dokumentation up-to-date
-
-v1.2.20250721
-
-* _FIX_: CSS wird jetzt über '/tile' geladen
-* _FIX_: Scrollbar Thumb standardmäßig auf transparent gesetzt.
-* _FIX_: Dokumentation angepasst
-
-v1.1.20241221
-
-* _NEU_: Tabellenstyle 'theme' (head), Tabellenkopffarbe wie Theme-Farbe
-* _NEU_: Sticky (stehender) Tabellenkopf
-* _FIX_: Tabellenstyle 'lines' (head) funktioniert beim scrollen korrekt
-* _FIX_: Meta-Tag wird jetzt von IPS ausgeliefert bzw. bereitgestellt
-
-v1.0.20240702
-
-* _NEU_: Initialversion
+- [English Documentation](docs/en/README.md "English documentation")
 
 ## 👨‍💻 Entwickler
 
-Seit nunmehr über 10 Jahren fasziniert mich das Thema Haussteuerung. In den letzten Jahren betätige ich mich auch intensiv in der Symcon Community und steuere dort verschiedenste Skript und Module bei. Ihr findet mich dort unter dem Namen @pitti ;-)
+Seit nunmehr über 10 Jahren fasziniert mich das Thema Haussteuerung. In den letzten Jahren betätige ich mich auch intensiv in der Symcon Community und steuere dort verschiedenste Skripte und Module bei. Ihr findet mich dort unter dem Namen @pitti ;-)
 
 [![GitHub](https://img.shields.io/badge/GitHub-@wilkware-181717.svg?style=for-the-badge&logo=github)](https://wilkware.github.io/)
 
 ## 💰 Spenden
 
-Die Software ist für die nicht kommerzielle Nutzung kostenlos, über eine Spende bei Gefallen des Moduls würde ich mich freuen.
+Die Software ist für die nicht-kommerzielle Nutzung kostenlos, über eine Spende bei Gefallen des Skins würde ich mich freuen.
 
 [![PayPal](https://img.shields.io/badge/PayPal-spenden-00457C.svg?style=for-the-badge&logo=paypal)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8816166)
 
@@ -75,4 +29,4 @@ Die Software ist für die nicht kommerzielle Nutzung kostenlos, über eine Spend
 
 Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International
 
-[![Licence](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-EF9421.svg?style=for-the-badge&logo=creativecommons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-EF9421.svg?style=for-the-badge&logo=creativecommons)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
